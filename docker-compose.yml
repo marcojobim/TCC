@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  tcc-api:
+    container_name: tcc-api-container
+    build:
+      context: ./Tcc.Api
+      dockerfile: Dockerfile
+    ports:
+      - "5293:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'        # Limita a API a usar no máximo 1 núcleo de CPU
+          memory: 1024M       # Limita a API a usar no máximo 128 Megabytes de RAM

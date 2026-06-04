@@ -1,0 +1,45 @@
+## Ouro do TCC: Ignorar a massa de dados pesada para o GitHub não bloquear o push
+telemetry.json
+
+## Algoritmos e Compilação do .NET (Ignora binários e caches locais)
+[Dd]ebug/
+[Dd]ebugPS/
+[Rr]elease/
+[Rr]eleasePS/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+b囊/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## C# Dev Kit / OmniSharp / VS Code (Configurações locais de Workspace)
+.vscode/
+!.vscode/extensions.json
+.shadow/
+.vs/
+
+## Docker & Docker Compose (Arquivos de estado locais e dados de containers)
+.dockerignore
+*.userimages
+.env.local
+.env.development
+.env.production
+
+## BenchmarkDotNet (Ignora os relatórios pesados e os auto-generated arquivos de código)
+BenchmarkDotNet.Artifacts/
+
+## NBomber (Ignora os relatórios locais gerados após cada execução)
+reports/
+[Tt]cc.[Ll]oad[Tt]ests/reports/
+[Tt]cc.[Ll]oad[Tt]ests/bin/
+
+## Arquivos de Sistema Operacional (Evita sujeira de metadados)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
