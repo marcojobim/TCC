@@ -15,4 +15,4 @@ services:
       resources:
         limits:
           cpus: '1.0'        # Limita a API a usar no máximo 1 núcleo de CPU
-          memory: 1024M       # Limita a API a usar no máximo 128 Megabytes de RAM
+          memory: 1024M       # Limita a API a usar no máximo 1024 Megabytes de RAM
